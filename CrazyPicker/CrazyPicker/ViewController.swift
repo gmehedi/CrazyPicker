@@ -12,6 +12,14 @@ import PhotosUI
 import LightCompressor
 
 
+public enum PHAssetMediaType : Int {
+    case Unknown
+    case Image
+    case Video
+    case Audio
+}
+
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var topCView: UIView!
@@ -20,11 +28,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        let vc = CrazyPicker()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.fetchAllPHAsset()
         
     }
     
@@ -197,6 +207,39 @@ extension ViewController {
     }
 }
 
+
+
+extension ViewController {
+    
+    func fetchAllPHAsset() {
+        
+        let fetchOptions = PHFetchOptions()
+        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate",
+                                                         ascending: false)]
+        fetchOptions.predicate = NSPredicate(format: "mediaType == %d || mediaType == %d",
+                                             PHAssetMediaSubtype.photoLive.rawValue,
+                                             PHAssetMediaSubtype.photoHDR.rawValue,
+                                             PHAssetMediaSubtype.photoPanorama.rawValue,
+                                             
+                                             PHAssetMediaSubtype.photoScreenshot.rawValue,
+                                             PHAssetMediaSubtype.photoDepthEffect.rawValue,
+                                             
+                                             PHAssetMediaSubtype.videoStreamed.rawValue)
+        fetchOptions.fetchLimit = 100
+
+
+        let allMedia = PHAsset.fetchAssets(with: fetchOptions)
+        let allPhotos = PHAsset.fetchAssets(with: .image, options: fetchOptions)
+        let allVideo = PHAsset.fetchAssets(with: .video, options: fetchOptions)
+        
+        let assets = PHAsset.fetchAssets(with: .image, options: nil)
+        print("Found \(allMedia.count) media")
+        print("Found \(allPhotos.count) images", assets.count)
+        print("Found \(allVideo.count) videos")
+    }
+    
+    
+}
 
 extension AVURLAsset {
     var fileSize: Int? {

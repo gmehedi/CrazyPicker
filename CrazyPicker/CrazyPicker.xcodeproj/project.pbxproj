@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0240B8C27BE073B00C1F0B3 /* CrazyPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0240B8A27BE073B00C1F0B3 /* CrazyPicker.xib */; };
+		E0240B8F27BE093E00C1F0B3 /* PickerThumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0240B8D27BE093E00C1F0B3 /* PickerThumCell.swift */; };
+		E0240B9027BE093E00C1F0B3 /* PickerThumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0240B8E27BE093E00C1F0B3 /* PickerThumCell.xib */; };
 		E0A71ABE27BCC5B000B2B9CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A71ABD27BCC5B000B2B9CC /* AppDelegate.swift */; };
 		E0A71AC027BCC5B000B2B9CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A71ABF27BCC5B000B2B9CC /* SceneDelegate.swift */; };
 		E0A71AC227BCC5B000B2B9CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A71AC127BCC5B000B2B9CC /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 		E0A71AE427BCC5B500B2B9CC /* CrazyPickerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A71AE327BCC5B500B2B9CC /* CrazyPickerUITestsLaunchTests.swift */; };
 		E0A71AF127BCFC4F00B2B9CC /* CompressManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A71AF027BCFC4F00B2B9CC /* CompressManager.swift */; };
 		E0A71AF427BD00F700B2B9CC /* LightCompressor in Frameworks */ = {isa = PBXBuildFile; productRef = E0A71AF327BD00F700B2B9CC /* LightCompressor */; };
+		E0F8CF9927BE1FA400979DED /* CrazyPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0240B8927BE073B00C1F0B3 /* CrazyPicker.swift */; };
+		E0F8CF9C27BE232500979DED /* OutputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8CF9A27BE232500979DED /* OutputVC.swift */; };
+		E0F8CF9D27BE232500979DED /* OutputVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F8CF9B27BE232500979DED /* OutputVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0240B8927BE073B00C1F0B3 /* CrazyPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyPicker.swift; sourceTree = "<group>"; };
+		E0240B8A27BE073B00C1F0B3 /* CrazyPicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CrazyPicker.xib; sourceTree = "<group>"; };
+		E0240B8D27BE093E00C1F0B3 /* PickerThumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerThumCell.swift; sourceTree = "<group>"; };
+		E0240B8E27BE093E00C1F0B3 /* PickerThumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerThumCell.xib; sourceTree = "<group>"; };
 		E0A71ABA27BCC5B000B2B9CC /* CrazyPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrazyPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A71ABD27BCC5B000B2B9CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0A71ABF27BCC5B000B2B9CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +64,8 @@
 		E0A71AE127BCC5B500B2B9CC /* CrazyPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyPickerUITests.swift; sourceTree = "<group>"; };
 		E0A71AE327BCC5B500B2B9CC /* CrazyPickerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrazyPickerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E0A71AF027BCFC4F00B2B9CC /* CompressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressManager.swift; sourceTree = "<group>"; };
+		E0F8CF9A27BE232500979DED /* OutputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputVC.swift; sourceTree = "<group>"; };
+		E0F8CF9B27BE232500979DED /* OutputVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutputVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0240B9127BE1DA200C1F0B3 /* PickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0240B8927BE073B00C1F0B3 /* CrazyPicker.swift */,
+				E0240B8A27BE073B00C1F0B3 /* CrazyPicker.xib */,
+				E0F8CF9A27BE232500979DED /* OutputVC.swift */,
+				E0F8CF9B27BE232500979DED /* OutputVC.xib */,
+			);
+			path = PickerViewController;
+			sourceTree = "<group>";
+		};
 		E0A71AB127BCC5AF00B2B9CC = {
 			isa = PBXGroup;
 			children = (
@@ -113,7 +136,10 @@
 				E0A71ACB27BCC5B400B2B9CC /* LaunchScreen.storyboard */,
 				E0A71ACE27BCC5B400B2B9CC /* Info.plist */,
 				E0A71AC627BCC5B000B2B9CC /* CrazyPicker.xcdatamodeld */,
+				E0240B9127BE1DA200C1F0B3 /* PickerViewController */,
 				E0A71AF027BCFC4F00B2B9CC /* CompressManager.swift */,
+				E0240B8D27BE093E00C1F0B3 /* PickerThumCell.swift */,
+				E0240B8E27BE093E00C1F0B3 /* PickerThumCell.xib */,
 			);
 			path = CrazyPicker;
 			sourceTree = "<group>";
@@ -248,6 +274,9 @@
 				E0A71ACD27BCC5B400B2B9CC /* LaunchScreen.storyboard in Resources */,
 				E0A71ACA27BCC5B400B2B9CC /* Assets.xcassets in Resources */,
 				E0A71AC527BCC5B000B2B9CC /* Main.storyboard in Resources */,
+				E0F8CF9D27BE232500979DED /* OutputVC.xib in Resources */,
+				E0240B9027BE093E00C1F0B3 /* PickerThumCell.xib in Resources */,
+				E0240B8C27BE073B00C1F0B3 /* CrazyPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +304,10 @@
 				E0A71AC227BCC5B000B2B9CC /* ViewController.swift in Sources */,
 				E0A71ABE27BCC5B000B2B9CC /* AppDelegate.swift in Sources */,
 				E0A71AC027BCC5B000B2B9CC /* SceneDelegate.swift in Sources */,
+				E0F8CF9C27BE232500979DED /* OutputVC.swift in Sources */,
 				E0A71AC827BCC5B000B2B9CC /* CrazyPicker.xcdatamodeld in Sources */,
+				E0F8CF9927BE1FA400979DED /* CrazyPicker.swift in Sources */,
+				E0240B8F27BE093E00C1F0B3 /* PickerThumCell.swift in Sources */,
 				E0A71AF127BCFC4F00B2B9CC /* CompressManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +495,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -491,6 +524,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
